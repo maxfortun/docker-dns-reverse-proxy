@@ -8,5 +8,5 @@ COPY docker-entrypoint.sh /usr/local/bin/
 EXPOSE 7053/tcp
 EXPOSE 7053/udp
 
+ENTRYPOINT []
 CMD [ "/usr/local/bin/docker-entrypoint.sh"]
-

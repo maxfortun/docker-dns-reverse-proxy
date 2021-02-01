@@ -9,6 +9,7 @@ BWD=$(dirname "$SWD")
 RUN_IMAGE="$REPO/$NAME"
 
 DOCKER_RUN_ARGS=( -e container=docker )
+#DOCKER_RUN_ARGS+=( --net=host )
 DOCKER_RUN_ARGS+=( -v /etc/resolv.conf:/etc/resolv.conf:ro )
 
 # Publish exposed ports
